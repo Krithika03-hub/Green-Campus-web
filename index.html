@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Green Campus - Eco Awareness</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f8f2;
+    color: #23452e;
+}
+
+/* Navigation */
+header {
+    background: #14532d;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+}
+
+nav a:hover {
+    color: #a3e635;
+}
+
+/* Home */
+.hero {
+    background: linear-gradient(#0007,#0007),
+    url("https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=1500");
+    background-size: cover;
+    background-position: center;
+    padding: 140px 8%;
+    text-align: center;
+    color: white;
+}
+
+.hero h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.btn {
+    background: #a3e635;
+    color: #14532d;
+    padding: 13px 25px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Sections */
+section {
+    padding: 65px 8%;
+}
+
+.title {
+    text-align: center;
+    color: #166534;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.description {
+    text-align: center;
+    margin-bottom: 35px;
+    line-height: 1.7;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 30px 20px;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px #0001;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card span {
+    font-size: 45px;
+}
+
+.card h3 {
+    color: #166534;
+    margin: 15px 0;
+}
+
+.card p {
+    line-height: 1.6;
+}
+
+/* About */
+.about {
+    text-align: center;
+    max-width: 850px;
+    margin: auto;
+    line-height: 2;
+}
+
+/* Eco tips */
+.tips {
+    background: #dcfce7;
+}
+
+.tips ul {
+    max-width: 650px;
+    margin: auto;
+    line-height: 2.5;
+    font-size: 17px;
+    list-style: none;
+}
+
+.tips li::before {
+    content: "🌱 ";
+}
+
+/* Pledge */
+.pledge {
+    background: #bbf7d0;
+    text-align: center;
+    border-radius: 20px;
+    padding: 45px 20px;
+    max-width: 850px;
+    margin: auto;
+}
+
+.pledge h2 {
+    margin-bottom: 20px;
+    color: #14532d;
+}
+
+#message {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #14532d;
+}
+
+/* Footer */
+footer {
+    background: #14532d;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 2;
+}
+
+/* Mobile */
+@media(max-width:700px) {
+    header {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        margin: 0;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- Navigation -->
+<header>
+    <div class="logo">🌿 Green Campus</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#practices">Practices</a>
+        <a href="#tips">Eco Tips</a>
+        <a href="#pledge">Pledge</a>
+    </nav>
+</header>
+
+<!-- Home -->
+<div class="hero" id="home">
+    <h1>Green Campus,<br>Greener Future!</h1>
+
+    <p>
+        Save Nature, Save Life.
+        Together let's create a clean and sustainable campus.
+    </p>
+
+    <a href="#about" class="btn">Explore More</a>
+</div>
+
+<!-- About -->
+<section id="about">
+    <h2 class="title">About Green Campus</h2>
+
+    <div class="about">
+        <p>
+            Green Campus is an eco-awareness initiative
+            designed to encourage students to protect the
+            environment and adopt sustainable lifestyles.
+
+            Our mission is to reduce pollution, save natural
+            resources, encourage recycling and create a
+            healthy environment for future generations.
+        </p>
+    </div>
+</section>
+
+<!-- Practices -->
+<section id="practices">
+    <h2 class="title">Eco-Friendly Practices</h2>
+    <p class="description">
+        Small steps can make a big difference!
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <span>♻️</span>
+            <h3>Waste Management</h3>
+            <p>Separate waste, recycle materials and reduce plastic usage.</p>
+        </div>
+
+        <div class="card">
+            <span>💧</span>
+            <h3>Water Conservation</h3>
+            <p>Save water by closing taps and avoiding unnecessary wastage.</p>
+        </div>
+
+        <div class="card">
+            <span>⚡</span>
+            <h3>Energy Saving</h3>
+            <p>Switch off lights and fans when they are not needed.</p>
+        </div>
+
+        <div class="card">
+            <span>🌳</span>
+            <h3>Tree Plantation</h3>
+            <p>Plant trees and protect greenery around the campus.</p>
+        </div>
+
+        <div class="card">
+            <span>🚲</span>
+            <h3>Green Transport</h3>
+            <p>Use bicycles, walking and public transport to reduce pollution.</p>
+        </div>
+
+        <div class="card">
+            <span>☀️</span>
+            <h3>Solar Energy</h3>
+            <p>Encourage renewable energy for a cleaner environment.</p>
+        </div>
+
+    </div>
+</section>
+
+<!-- Eco Tips -->
+<section class="tips" id="tips">
+    <h2 class="title">Smart Eco Tips</h2>
+
+    <ul>
+        <li>Carry reusable water bottles.</li>
+        <li>Avoid single-use plastic.</li>
+        <li>Use both sides of paper.</li>
+        <li>Keep classrooms clean.</li>
+        <li>Switch off electrical appliances.</li>
+        <li>Participate in tree plantation activities.</li>
+        <li>Spread environmental awareness.</li>
+    </ul>
+</section>
+
+<!-- Pledge -->
+<section id="pledge">
+    <div class="pledge">
+        <h2>💚 Take the Green Pledge</h2>
+
+        <p>
+            I promise to protect nature, save water and energy,
+            reduce waste and keep my campus clean.
+            I will encourage others to follow eco-friendly habits.
+        </p>
+
+        <br>
+
+        <button class="btn" onclick="takePledge()">
+            Take the Pledge 🌱
+        </button>
+
+        <p id="message"></p>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <h3>🌿 Green Campus - Smart Eco Awareness</h3>
+    <p>Small Actions, Greener Future!</p>
+    <p>Designed by Krithika S | BCA Student</p>
+    <p>© 2026 Green Campus</p>
+</footer>
+
+<!-- JavaScript -->
+<script>
+function takePledge() {
+    document.getElementById("message").innerHTML =
+    "🎉 Thank you for becoming a Green Campus Eco Warrior! 💚";
+
+    alert("Thank you for taking the Green Pledge!");
+}
+</script>
+
+</body>
+</html>
